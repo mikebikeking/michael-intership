@@ -14,7 +14,7 @@ const HotCollections = () => {
   const [loading, setLoading] = useState(true);
 
   async function main() {
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1200));
 
     const { data } = await axios.get(
       "https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections"
