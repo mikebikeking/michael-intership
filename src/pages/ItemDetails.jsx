@@ -13,7 +13,7 @@ const ItemDetails = () => {
   const id = useParams().id;
 
   async function main() {
-    // Simulate a longer loading time for demonstration
+
     await new Promise((resolve) => setTimeout(resolve, 1200));
 
     const { data } = await axios.get(
@@ -41,8 +41,8 @@ const ItemDetails = () => {
                 <div className="col-md-6 text-center">
                   <Skeleton
                     className="img-fluid img-rounded mb-sm-30 nft-image"
-                    height={300} // Adjust height as needed
-                    width={400} // Adjust width as needed
+                    height={300} 
+                    width={400} 
                   />
                 </div>
                 <div className="col-md-6">
@@ -90,7 +90,7 @@ const ItemDetails = () => {
                       <div className="spacer-40"></div>
                       <h6><Skeleton width={60} /></h6>
                       <div className="nft-item-price">
-                        <img src={EthImage} alt="" style={{ visibility: 'hidden' }} /> {/* Keep the image for layout, hide it */}
+                        <img src={EthImage} alt="" style={{ visibility: 'hidden' }} /> 
                         <Skeleton width={80} />
                       </div>
                     </div>
